@@ -1,1 +1,67 @@
-hello world!
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s8 offset-s2">
+          <div class="card-panel teal">
+            <span class="white-text">
+              today's output
+            </span>
+          </div>
+        </div>
+        <form class="col s8 offset-s2">
+          <div class="row">
+            <div class="input-field col s6">
+              <textarea id="form-name" class="materialize-textarea"></textarea>
+              <label for="form-name">Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="form-done" class="materialize-textarea"></textarea>
+              <label for="form-done">Done</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="form-plan" class="materialize-textarea"></textarea>
+              <label for="form-plan">Plan</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="form-memo" class="materialize-textarea"></textarea>
+              <label for="form-memo">Memo</label>
+            </div>
+          </div>
+        </form>
+        <div class="col s12 center">
+          <a class="waves-effect waves-light btn-small" id="btn">send</a>
+        </div>
+      </div>
+      <div class="row section">
+        <div class="col s8 offset-s2">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Rank</th>
+              </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
